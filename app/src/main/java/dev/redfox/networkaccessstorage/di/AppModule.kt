@@ -1,5 +1,6 @@
 package dev.redfox.networkaccessstorage.di
 
+import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -9,7 +10,7 @@ import dev.redfox.networkaccessstorage.utils.Constant.Companion.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.converter.moshi.MoshiConverterFactory
 import java.util.concurrent.TimeUnit
 
 @Module
@@ -22,7 +23,7 @@ object AppModule {
         get() {
             if (mClient == null) {
                 val interceptor = HttpLoggingInterceptor()
-                interceptor.level = HttpLoggingInterceptor.Level.BASIC
+                interceptor.level = HttpLoggingInterceptor.Level.BODY
 
                 val httpBuilder = OkHttpClient.Builder()
                 httpBuilder
@@ -45,7 +46,7 @@ object AppModule {
     fun getRetofitInstance(): Retrofit {
         return Retrofit.Builder()
             .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
+            .addConverterFactory(MoshiConverterFactory.create().asLenient())
             .client(client)
             .build()
     }
