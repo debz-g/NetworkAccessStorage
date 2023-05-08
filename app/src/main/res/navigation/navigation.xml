@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/viewFilesFragment">
+    <fragment
+        android:id="@+id/uploadFileFragment"
+        android:name="dev.redfox.networkaccessstorage.ui.UploadFileFragment"
+        android:label="fragment_upload_file"
+        tools:layout="@layout/fragment_upload_file" >
+        <action
+            android:id="@+id/action_uploadFileFragment_to_viewFilesFragment"
+            app:destination="@id/viewFilesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFilesFragment"
+        android:name="dev.redfox.networkaccessstorage.ui.ViewFilesFragment"
+        android:label="fragment_view_files"
+        tools:layout="@layout/fragment_view_files" >
+        <action
+            android:id="@+id/action_viewFilesFragment_to_uploadFileFragment"
+            app:destination="@id/uploadFileFragment" />
+    </fragment>
+</navigation>
