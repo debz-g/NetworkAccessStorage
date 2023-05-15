@@ -9,19 +9,13 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4c7c87a-cfef-4a11-96bd-c83143eed871" name="Changes" comment="Added:&#10;&#10;- Boht saare changes">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" afterDir="false" />
+    <list default="true" id="b4c7c87a-cfef-4a11-96bd-c83143eed871" name="Changes" comment="Added:&#10;&#10;- Boht saare changes phir se">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dev/redfox/networkaccessstorage/ui/UploadFileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dev/redfox/networkaccessstorage/ui/UploadFileFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dev/redfox/networkaccessstorage/ui/ViewFilesFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dev/redfox/networkaccessstorage/ui/ViewFilesFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/dev/redfox/networkaccessstorage/utils/Constant.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/dev/redfox/networkaccessstorage/utils/Constant.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_files.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_view_files.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +25,7 @@
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[adb-e0bdf1ba-ZV3Tzc._adb-tls-connect._tcp]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -183,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683571147811</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added:&#10;&#10;- Boht saare changes phir se">
+      <created>1684090780380</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684090780380</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +206,7 @@
     <MESSAGE value="Added:&#10;&#10;- Utils&#10;- Dependency Injection using Hilt&#10;- Networking Modules&#10;- ViewModels&#10;- basic ui elements" />
     <MESSAGE value="Added:&#10;&#10;- Added Navigation Graph" />
     <MESSAGE value="Added:&#10;&#10;- Boht saare changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;&#10;- Boht saare changes" />
+    <MESSAGE value="Added:&#10;&#10;- Boht saare changes phir se" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added:&#10;&#10;- Boht saare changes phir se" />
   </component>
 </project>
