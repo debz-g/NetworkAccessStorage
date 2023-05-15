@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_light_blue">#D3EDFF</color>
+    <color name="bg_light_blue_alpha10">#1A63BEFF</color>
+    <color name="black">#FF000000</color>
+    <color name="black_alpha10">#1A000000</color>
+    <color name="black_alpha40">#66000000</color>
+    <color name="black_alpha60">#99000000</color>
+    <color name="card_color1">#FFF1D4</color>
+    <color name="card_color2">#FFDAB8</color>
+    <color name="card_color3">#FFD3D3</color>
+    <color name="card_color4">#FFE28D</color>
+    <color name="colorError">#d32f2f</color>
+    <color name="colorSuccess">#4caf50</color>
+    <color name="colorWarning">#ff9800</color>
+    <color name="color_bottom_card">#7DE4BF</color>
+    <color name="color_top_card">#E7E7E7</color>
+    <color name="dark">#4D4D4D</color>
+    <color name="grey">#727272</color>
+    <color name="intro_small_card_one">#26F1DE54</color>
+    <color name="intro_small_card_two">#268C95FB</color>
+    <color name="material_blue">#4599FF</color>
+    <color name="material_green">#43C685</color>
+    <color name="material_green_dark">#25A365</color>
+    <color name="material_grey">#EFEFEF</color>
+    <color name="material_orange">#FF6D63</color>
+    <color name="material_purple">#B15AFF</color>
+    <color name="material_red">#FF7189</color>
+    <color name="material_red_dark">#FF4766</color>
+    <color name="material_yellow">#D9FFA9</color>
+    <color name="material_yellow_alt">#FDFFD4</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="subtle_red">#D2FFC8D2</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="trans">#00FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_alpha30">#4DFFFFFF</color>
+    <dimen name="fab_margin">16dp</dimen>
+    <string name="app_name">NetworkAccessStorage</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <style name="AppSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/sofiaprosoftmedium</item>
+    </style>
+    <style name="LoginTextInputInnerFieldStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="LoginTextInputOuterFieldStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.MaterialCardView.CutBottom" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+    <style name="ShapeAppearanceOverlay.MaterialCardView.CutTop" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomRight">16dp</item>
+        <item name="cornerSizeBottomLeft">16dp</item>
+    </style>
+    <style name="Theme.NetworkAccessStorage" parent="Theme.Material3.Light.NoActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+    </style>
+    <style name="Theme.NetworkAccessStorage.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.NetworkAccessStorage.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.NetworkAccessStorage.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="cardViewBottom" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.CutTop</item>
+    </style>
+    <style name="cardViewTop" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.CutBottom</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+dev.redfox.networkaccessstorage.test.app-annotation-experimental-1.3.0-0 C:\Users\Debayan\.gradle\caches\transforms-3\1207aea1f485d9f3487917db11e9faff\transformed\annotation-experimental-1.3.0\res
+dev.redfox.networkaccessstorage.test.app-core-1.5.0-1 C:\Users\Debayan\.gradle\caches\transforms-3\9b9429990cadb405a825d4212a2f7cff\transformed\core-1.5.0\res
+dev.redfox.networkaccessstorage.test.app-androidTest-2 D:\debz-work\Android-Stuff\NetworkAccessStorage\app\build\generated\res\resValues\androidTest\debug
+dev.redfox.networkaccessstorage.test.app-androidTest-3 D:\debz-work\Android-Stuff\NetworkAccessStorage\app\build\generated\res\rs\androidTest\debug
+dev.redfox.networkaccessstorage.test.app-mergeDebugAndroidTestResources-4 D:\debz-work\Android-Stuff\NetworkAccessStorage\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+dev.redfox.networkaccessstorage.test.app-mergeDebugAndroidTestResources-5 D:\debz-work\Android-Stuff\NetworkAccessStorage\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+dev.redfox.networkaccessstorage.test.app-merged_res-6 D:\debz-work\Android-Stuff\NetworkAccessStorage\app\build\intermediates\merged_res\debugAndroidTest
