@@ -3,6 +3,7 @@ buildscript {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
     ext {
         hilt_version = '2.44.2'
@@ -11,16 +12,38 @@ buildscript {
         classpath "com.android.tools.build:gradle:7.0.4"
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.10'
         classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle filesls
     }
 }
+
+
 
 plugins {
     id 'com.android.application' version '7.4.2' apply false
     id 'com.android.library' version '7.4.2' apply false
     id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+}
+
+allprojects {
+    def localProperties = new Properties()
+    localProperties.load(new FileInputStream(rootProject.file("local.properties")))
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+
+        maven {
+            credentials {
+                username = localProperties['LIVENESS_SDK_USER_NAME']
+                password = localProperties['LIVENESS_SDK_PASSWORD']
+            }
+            authentication{
+                basic(BasicAuthentication)
+            }
+            url "https://api.bitbucket.org/2.0/repositories/" +
+                    "krzandroid/sdk/src/releases/"
+
+        }
+    }
 }
 
 task clean(type: Delete) {

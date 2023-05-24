@@ -1,3 +1,0 @@
-dev.redfox.networkaccessstorage.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme
