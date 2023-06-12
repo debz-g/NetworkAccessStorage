@@ -1,12 +1,14 @@
 package dev.redfox.networkaccessstorage.networking
 
 import dev.redfox.networkaccessstorage.models.LoginResponseData
+import dev.redfox.networkaccessstorage.models.WebUrlResponse
 import dev.redfox.networkaccessstorage.models.WriteResponseData
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Response
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
+import retrofit2.http.GET
 import retrofit2.http.Multipart
 import retrofit2.http.POST
 import retrofit2.http.Part
@@ -22,6 +24,9 @@ interface NasApiInterface {
 
     @POST("read")
     suspend fun read()
+
+    @GET("readByMobile")
+    suspend fun getWebUrl() : Response<List<WebUrlResponse>>
 
     @Multipart
     @POST("write")

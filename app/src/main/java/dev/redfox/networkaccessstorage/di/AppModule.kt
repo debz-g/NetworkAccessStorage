@@ -1,12 +1,13 @@
 package dev.redfox.networkaccessstorage.di
 
-import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
+import dagger.hilt.EntryPoint
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ViewModelComponent
+import dagger.hilt.components.SingletonComponent
 import dev.redfox.networkaccessstorage.networking.NasApiInterface
-import dev.redfox.networkaccessstorage.utils.Constant.Companion.BASE_URL
+import dev.redfox.networkaccessstorage.utils.Constant
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -15,9 +16,14 @@ import java.util.concurrent.TimeUnit
 
 @Module
 @InstallIn(ViewModelComponent::class)
-object AppModule {
+object AppModule: Constant {
 
     private var mClient: OkHttpClient? = null
+    private var baseUrl: String = ""
+
+    @Provides
+    fun provideBaseUrl(): String = baseUrl
+
 
     val client: OkHttpClient
         get() {
@@ -36,7 +42,6 @@ object AppModule {
             return mClient!!
         }
 
-
     @Provides
     fun getRetrofitService(retrofit: Retrofit): NasApiInterface {
         return retrofit.create(NasApiInterface::class.java)
@@ -44,10 +49,15 @@ object AppModule {
 
     @Provides
     fun getRetofitInstance(): Retrofit {
+
         return Retrofit.Builder()
-            .baseUrl(BASE_URL)
+            .baseUrl(provideBaseUrl())
             .addConverterFactory(MoshiConverterFactory.create().asLenient())
             .client(client)
             .build()
+    }
+
+    fun setBaseUrl(baseUrl: String) {
+        this.baseUrl = baseUrl
     }
 }
